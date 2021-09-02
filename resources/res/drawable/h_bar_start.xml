@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/progress_background">
+        <color android:color="@color/h_bar_background"/>
+    </item>
+    <item android:id="@+id/progress_main">
+        <clip android:gravity="start" android:clipOrientation="horizontal">
+            <color android:color="@color/h_bar_color"/>
+        </clip>
+    </item>
+</layer-list>

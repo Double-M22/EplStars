@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/game_phase_top" android:layout_width="match_parent" android:layout_height="190dp">
+        <ProgressBar android:id="@+id/cProgressBar" android:layout_width="match_parent" android:layout_height="5dp" android:max="200" android:progress="1" android:indeterminate="false" android:progressDrawable="@drawable/h_bar_start" android:minWidth="200dp" android:minHeight="50dp" style="?android:attr/progressBarStyleHorizontal"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_above="@+id/career_score" android:layout_marginStart="25dp">
+            <View android:id="@+id/life1" android:background="@drawable/life" android:layout_width="30dp" android:layout_height="25dp"/>
+            <View android:id="@+id/life2" android:background="@drawable/life" android:layout_width="30dp" android:layout_height="25dp" android:layout_marginLeft="5dp" android:layout_marginStart="5dp"/>
+            <View android:id="@+id/life3" android:background="@drawable/life" android:layout_width="30dp" android:layout_height="25dp" android:layout_marginLeft="5dp" android:layout_marginStart="5dp"/>
+            <View android:id="@+id/life4" android:background="@drawable/life" android:layout_width="30dp" android:layout_height="25dp" android:layout_marginLeft="5dp" android:layout_marginStart="5dp"/>
+            <View android:id="@+id/life5" android:background="@drawable/life" android:layout_width="30dp" android:layout_height="25dp" android:layout_marginLeft="5dp" android:layout_marginStart="5dp"/>
+        </LinearLayout>
+        <TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" android:textSize="30sp" android:textColor="@color/white" android:id="@+id/career_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginBottom="5dp" android:layout_alignParentBottom="true" android:layout_marginStart="25dp"/>
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/question_back" android:layout_width="match_parent" android:layout_height="120dp" android:layout_marginBottom="20dp">
+        <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="40sp" android:textColor="@color/white" android:id="@+id/cQst" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:textAllCaps="true"/>
+    </RelativeLayout>
+    <GridLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:rowCount="2" android:columnCount="2">
+        <Button android:textSize="18sp" android:textColor="@color/white" android:id="@+id/cOpt_1" android:background="@drawable/button" android:layout_width="160dp" android:layout_height="120dp" android:layout_marginLeft="5dp" android:layout_marginBottom="15dp" android:layout_column="0" android:layout_row="0" android:layout_marginStart="5dp"/>
+        <Button android:textSize="18sp" android:textColor="@color/white" android:layout_gravity="end" android:id="@+id/cOpt_2" android:background="@drawable/button" android:layout_width="160dp" android:layout_height="120dp" android:layout_marginRight="5dp" android:layout_column="1" android:layout_row="0" android:layout_marginEnd="5dp"/>
+        <Button android:textSize="18sp" android:textColor="@color/white" android:id="@+id/cOpt_3" android:background="@drawable/button" android:layout_width="160dp" android:layout_height="120dp" android:layout_marginLeft="5dp" android:layout_column="0" android:layout_row="1" android:layout_marginStart="5dp"/>
+        <Button android:textSize="18sp" android:textColor="@color/white" android:layout_gravity="end" android:id="@+id/cOpt_4" android:background="@drawable/button" android:layout_width="160dp" android:layout_height="120dp" android:layout_marginRight="5dp" android:layout_column="1" android:layout_row="1" android:layout_marginEnd="5dp"/>
+    </GridLayout>
+</LinearLayout>

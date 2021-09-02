@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/settings_top_bar" android:background="@drawable/settings_top_bar" android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginBottom="80dp"/>
+    <RelativeLayout android:id="@+id/music_container" android:paddingLeft="50dp" android:paddingRight="50dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30dp" android:layout_below="@+id/settings_top_bar">
+        <TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" android:textSize="35sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/result_correct_answer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Music :" android:layout_centerVertical="true"/>
+        <Button android:id="@+id/music_toggle" android:background="@drawable/toggle_on" android:layout_width="80dp" android:layout_height="40dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="toggle_music" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/sound_conatainer" android:paddingLeft="50dp" android:paddingRight="50dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_below="@+id/music_container">
+        <TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" android:textSize="35sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/result_wrong_answer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sound :" android:layout_centerVertical="true"/>
+        <Button android:id="@+id/sound_toggle" android:background="@drawable/toggle_on" android:layout_width="80dp" android:layout_height="40dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="toggle_sound" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</RelativeLayout>
